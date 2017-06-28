@@ -1,0 +1,28 @@
+server:
+    port: 7008
+    context-path: /SpringBootDemo
+
+druid:
+    type: com.alibaba.druid.pool.DruidDataSource
+    master:
+        url: jdbc:mysql://localhost:3306/test1?serverTimezone=UTC
+        driver-class-name: com.mysql.jdbc.Driver
+        username: root
+        password: 1234
+        initial-size: 5
+        min-idle: 1
+        max-active: 100
+        test-on-borrow: true
+    slave:
+        url: jdbc:mysql://localhost:3306/test2?serverTimezone=UTC
+        driver-class-name: com.mysql.jdbc.Driver
+        username: root
+        password: 1234
+        initial-size: 5
+        min-idle: 1
+        max-active: 100
+        test-on-borrow: true
+
+mybatis:
+    type-aliases-package: com.dao
+    mapper-locations: classpath:mapper/*.xml
