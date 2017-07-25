@@ -2,6 +2,7 @@ server:
     port: 7008
     context-path: /SpringBootDemo
 
+
 druid:
     type: com.alibaba.druid.pool.DruidDataSource
     master:

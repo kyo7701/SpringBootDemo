@@ -11,7 +11,7 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
  * Date:2017-06-20 22:53
  */
 
-@SpringBootApplication(scanBasePackages = {"com.controller","com.service","com.dao","com.conf","com.entity"},exclude = {DataSourceAutoConfiguration.class})
+@SpringBootApplication(scanBasePackages = {"com.controller","com.service","com.dao","com.conf","com.entity","com.util"},exclude = {DataSourceAutoConfiguration.class})
 public class Application extends AbstractApplication {
 
     public static void main(String[] args) {
